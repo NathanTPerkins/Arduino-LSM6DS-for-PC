@@ -11,7 +11,6 @@
 #include <string.h>
 #include <time.h>
 #include <math.h>
-
 #ifdef USING_CSV
 #include <CSVParser.h>
 #define ACC_X 0

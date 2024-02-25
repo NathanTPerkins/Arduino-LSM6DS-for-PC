@@ -39,6 +39,8 @@ void Adafruit_LSM6DSO32::_read(void) {
     this->gyroZ = rand() / rand();
 
     this->temperature = rand() / rand();
+
+    return;
   }
 
   #ifdef USING_CSV
@@ -65,6 +67,7 @@ void Adafruit_LSM6DSO32::_read(void) {
   this->gyroZ = atof(this->sensor_data->operator[](this->file_index)[GYRO_Z]);
 
   this->temperature = atof(this->sensor_data->operator[](this->file_index)[TEMP]);
+  return;
   #else
   this->accX = rand() / rand();
   this->accY = rand() / rand();
@@ -75,6 +78,8 @@ void Adafruit_LSM6DSO32::_read(void) {
   this->gyroZ = rand() / rand();
 
   this->temperature = rand() / rand();
+
+  return;
   #endif
 }
 
