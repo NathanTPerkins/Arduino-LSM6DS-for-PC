@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+
+Arduino-Adafruit-Sensor-for-PC/
+Arduino-Cores-for-PC/
+Makefile
+debug.cpp
+.vscode/
