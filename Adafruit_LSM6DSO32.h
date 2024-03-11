@@ -15,7 +15,7 @@ typedef enum dso32_accel_range {
 
 class Adafruit_LSM6DSO32 : public Adafruit_LSM6DSOX {
 public:
-    Adafruit_LSM6DSO32(const char *);
+    Adafruit_LSM6DSO32(const char * filename = NULL);
 
     lsm6dso32_accel_range_t getAccelRange(void);
     void setAccelRange(lsm6dso32_accel_range_t new_range);
